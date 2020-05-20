@@ -26,7 +26,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/hexo_blog/css/style.css?v=1589892479289">-->
+  <!--<link rel="stylesheet" href="/hexo_blog/css/style.css?v=1589937842790">-->
 <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/hexo_blog/atom.xml" title="Jack Blog" type="application/atom+xml">
 </head>
 
@@ -92,9 +92,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">社交按钮</h3>
     <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+        <a class="mdui-ripple" href="https://github.com/zhangjie1314" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
             <i class="nexmoefont icon-github"></i>
         </a>
     </div>
@@ -203,18 +201,20 @@
 
     
     <section class="nexmoe-comment">
-    <div id="lv-container" data-id="city" data-uid="&lt;data_uid&gt;">
-    <script id="livere-comment-js">
-    (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-       if (typeof LivereTower === 'function') { return; }
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-       e.parentNode.insertBefore(j, e);
-    })(document, 'script');
-    </script>
-</div>
+    <div id="gitment"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'zhangjie1314', // 你的 GitHub ID
+    repo: 'zhangjie1314.github.io', // 存储评论的 repo
+    oauth: {
+        client_id: '12c16071b5ff51809fd7', // 你的 client ID
+        client_secret: '2645f21e6587e46aed68f8e972ae304255dd6337' // 你的 client secret
+    },
+})
+gitment.render('gitment')
+</script>
 </section>
   </div>
 </div>
@@ -227,7 +227,7 @@
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-<script src="/hexo_blog/js/app.js?v=1589892479292"></script>
+<script src="/hexo_blog/js/app.js?v=1589937842791"></script>
   
 
 
